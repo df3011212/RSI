@@ -1,0 +1,106 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+.hidden {
+  display: none;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+th {
+  background-color: #f0f0f0;
+  cursor: default;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.rsi-high {
+  color: red;
+  font-weight: bold;
+}
+
+.rsi-low {
+  color: green;
+  font-weight: bold;
+}
+
+.rank {
+  width: 50px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative; /* ✅ 加這行才看得到關閉按鈕 */
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+#favoriteCards .rsi-high {
+  color: red;
+  font-weight: bold;
+}
+#favoriteCards .rsi-low {
+  color: green;
+  font-weight: bold;
+}
+.update-time {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  display: inline-block;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OKX 主流幣 RSI 排行榜</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>📈 OKX 主流幣 RSI 排行榜</h1>
+  <div id="progressStatus" class="hidden" style="margin-bottom:1.5rem; font-size: 0.95rem; color: #444;"></div>
+<div id="updateStatus" style="font-size: 1rem; color: #555; margin-bottom: 1rem;"></div>
+
+  <div id="notice" class="hidden"></div>
+  <table id="rsiTable">
+    <thead>
+    <tr>
+      <th>排名</th>
+      <th>幣種</th>
+      <th>⭐</th>
+      <th id="rsiHeader" style="cursor: pointer;">RSI (1H) ⇅</th>
+      <th id="blockHeader" style="cursor: pointer;">區塊 ⭮</th>
+      <th>下次更新</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+<div id="pagination" style="text-align: center; margin-top: 1rem;"></div>
+
+<div id="detailModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal" class="close-button">&times;</span>
+    <h2 id="modalTitle">🔍 幣種 RSI </h2>
+    <div id="modalPrice">📈 最新價格：</div>
+    <div id="modalRsi">📊 RSI (1H)：</div>
+    <div id="modalTime">🕒 最後 K 線時間：</div>
+  </div>
+</div>
+
+<h2 style="margin-top: 3rem;">⭐ 我的最愛 1秒更新RSI & 價格 最多9張 </h2>
+<div style="margin-bottom: 1rem;">
+  <input id="favInput" list="symbolList" placeholder="選擇幣種代碼" />
+  <button onclick="addFavorite()">加入最愛</button>
+  <datalist id="symbolList"></datalist>
+</div>
+
+<div id="favoriteCards" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;"></div>
+
+
+</body>
+</html>
